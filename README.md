@@ -1,4 +1,4 @@
 panelafrica
 ===========
 
-Panel africa vide marketing
+Panel africa video marketing
