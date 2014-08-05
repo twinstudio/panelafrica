@@ -15,6 +15,8 @@ Bundle & namespace
 
 > Panelafrica\Bundle\Nom du bundle.
 
+#### Generation de bundle :
+
 <code>
  php app/console generate:bundle
 </code>
