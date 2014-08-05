@@ -1,0 +1,7 @@
+parameters:
+#    affiche.example.class: Panelafrica\Bundle\AfficheBundle\Example
+
+services:
+#    affiche.example:
+#        class: %affiche.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

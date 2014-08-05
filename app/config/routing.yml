@@ -1,0 +1,40 @@
+panel:
+    resource: "@PanelBundle/Resources/config/routing.yml"
+    prefix:   /
+
+mini_sondage:
+    resource: "@MiniSondageBundle/Resources/config/routing.yml"
+    prefix:   /mini-sondage
+
+questionnaire:
+    resource: "@QuestionnaireBundle/Resources/config/routing.yml"
+    prefix:   /questionnaire
+
+promo:
+    resource: "@PromoBundle/Resources/config/routing.yml"
+    prefix:   /promo
+
+tombola:
+    resource: "@TombolaBundle/Resources/config/routing.yml"
+    prefix:   /tombola
+
+spot:
+    resource: "@SpotBundle/Resources/config/routing.yml"
+    prefix:   /spot
+
+affiche:
+    resource: "@AfficheBundle/Resources/config/routing.yml"
+    prefix:   /affiche
+
+interview:
+    resource: "@InterviewBundle/Resources/config/routing.yml"
+    prefix:   /interview
+
+event:
+    resource: "@EventBundle/Resources/config/routing.yml"
+    prefix:   /event
+
+news:
+    resource: "@NewsBundle/Resources/config/routing.yml"
+    prefix:   /news
+

@@ -1,0 +1,3 @@
+promo_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: PromoBundle:Default:index }

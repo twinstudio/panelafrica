@@ -1,0 +1,7 @@
+parameters:
+#    mini_sondage.example.class: Panelafrica\Bundle\MiniSondageBundle\Example
+
+services:
+#    mini_sondage.example:
+#        class: %mini_sondage.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

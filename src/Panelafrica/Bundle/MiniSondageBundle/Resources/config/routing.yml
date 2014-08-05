@@ -1,0 +1,3 @@
+mini_sondage_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: MiniSondageBundle:Default:index }

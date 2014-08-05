@@ -1,0 +1,19 @@
+panel_garde:
+    path:     /
+    defaults: { _controller: PanelBundle:Panel:index }
+
+panel_accueil:
+    path:     /accueil
+    defaults: { _controller: PanelBundle:Panel:accueil }
+
+panel_cookie:
+    path:     /cookie
+    defaults: { _controller: PanelBundle:Panel:cookie }
+
+panel_mentionlegale:
+    path:     /mention-legale
+    defaults: { _controller: PanelBundle:Panel:mentionlegale }
+
+panel_conditiondutlisation:
+    path:     /condition-d-utlisation
+    defaults: { _controller: PanelBundle:Panel:conditiondutlisation }

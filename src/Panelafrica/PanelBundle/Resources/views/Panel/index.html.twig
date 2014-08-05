@@ -1,0 +1,123 @@
+{# Heritage du template de base #}
+{% extends 'PanelBundle::template.html.twig' %}
+
+{% block stylesheets %} 
+<link rel="stylesheet" href="{{ asset('css/intro.css')}}"> 
+{% endblock %}
+
+{# Title page #}
+{% block title %}{{ parent() }}{% endblock %}
+
+{# Body of page #}
+{% block body %}
+ <div id="wrapper">
+
+         <!-- header -->
+         <header id="header">
+            <div class="container">
+
+                <div class="logo"></div>
+                <a class="login" href="#" id="login">
+                    <i class="fa fa-user"></i>
+                    Connexion
+                </a>
+            </div>
+         </header>
+
+         <div id="popin-l">
+             <p>Hello World !</p>
+         </div>
+
+         <!-- page content -->
+         <section id="page-content">
+             <!-- container -->
+             <div class="container">
+                <!-- row -->
+                 <div class="row">
+                     <div class="col-lg-12">
+                         <hgroup>
+                             <h2>Donnez votre avis et gagnez!</h2>
+                             <h3>DES CADEAUX & DU CASH</h3>
+                         </hgroup>
+                     </div>
+                 </div>
+
+                 <!-- row -->
+                 <div class="row">
+                     <div class="col-lg-4">
+                         <div class="block">
+                             <p>
+                                 Je cree un compte gratuitement.
+                             </p>
+                             <span class="round red">1</span>
+                         </div>
+                     </div>
+                     <div class="col-lg-4">
+                         <div class="block">
+                             <p>
+                                 Je donne mon avis sur des produits, je réponds à des enquêtes et des sondages.
+                             </p>
+                             <span class="round blue">2</span>
+                         </div>
+                     </div>
+                     <div class="col-lg-4">
+                         <div class="block">
+                             <p>
+                                 Je gagne de l'argent cash et des cadeaux.
+                             </p>
+                             <span class="round green">3</span>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+             <!-- end.container -->
+
+             <!-- zone des boutons -->
+             <div class="btn-zne">
+
+                 <!-- container -->
+                 <div class="container">
+                     <a href="" class="btn fbk"><i class="fa fa-facebook-square"></i> Inscription facebook</a>
+                     <a href="" class="btn mail"><i class="fa fa-envelope"></i> Inscription email</a>
+                 </div>
+
+             </div>
+         </section>
+
+        <footer id="footer">
+            <div class="container">
+                <ul>
+                    <li>
+                        <a href="">Conditions d'utilisation</a>
+                    </li>
+                    <li>
+                        <a href="">Conditions generales</a>
+                    </li>
+                    <li>
+                        <a href="">Contacts</a>
+                    </li>
+                    <li>Panel Africa © 2014 · Afrikadeal Agency</li>
+                </ul>
+            </div>
+        </footer>
+
+
+
+ </div>
+{% endblock %}
+
+{% block javascripts %}
+    <script src="{{ asset('js/jquery-mary-popin.js') }}"></script>
+    <script>
+        $('#login').marypopin('#popin-l', {
+            position: 'middle',
+            close: '.close',
+            speed: 300,
+            maskClick: true,
+            beforeOpen: function(){},
+            afterOpen: function(){},
+            beforeClose: function(){},
+            afterClose: function(){}
+        });
+    </script>
+{% endblock %}

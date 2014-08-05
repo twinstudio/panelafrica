@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        {% block robots %}<meta name="robots" content="noindex, nofollow" >{% endblock %}
+
+        <link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}">
+        <link rel="icon" type="image/png" href="{{ asset('favicon.png') }}" >
+        <meta name="viewport" content="width=device-width, user-scalable=1">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <title>{% block title %}Panelafrica{% endblock %}</title>
+        <link rel="stylesheet" href="{{ asset('css/normalize.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
+
+        {% block stylesheets %}{% endblock %}
+        
+        <!--[if lt IE 9]>
+          <script src="{{ asset('js/html5shiv.js') }}"></script>
+        <![endif]-->
+    </head>
+    <body>
+        {# body #}
+        {% block body %}{% endblock %}
+
+
+        {# javascript #}
+        <script src="{{ asset('js/jquery-1.11.0.min.js') }}"></script>
+
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>

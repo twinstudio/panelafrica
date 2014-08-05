@@ -1,0 +1,19 @@
+affiche_homepage:
+    path:     /
+    defaults: { _controller: AfficheBundle:Affiche:index }
+
+affiche_ajouter:
+    path:     /ajouter
+    defaults: { _controller: AfficheBundle:Affiche:ajouter }
+
+affiche_modifier:
+    path:     /modifier/{id}
+    defaults: { _controller: AfficheBundle:Affiche:modifier }
+    requirements:
+        id: \d+
+
+affiche_supprimer:
+    path:     /supprimer/{id}
+    defaults: { _controller: AfficheBundle:Affiche:supprimer }
+    requirements:
+        id: \d+
