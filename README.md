@@ -11,6 +11,7 @@ Bundle principal
 
 Bundle & namespace
 ------------------
+#### Namespace:
 
 > Panelafrica\Bundle\Nom du bundle.
 
